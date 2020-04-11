@@ -1,5 +1,15 @@
-// 1. Store interface element in a variable
-// 2. Define the functionality that will happen on click
+var video = document.querySelector(".videoElement");
+
+if (navigator.mediaDevices.getUserMedia) {
+  navigator.mediaDevices.getUserMedia({ video: true })
+    .then(function (stream) {
+      video.srcObject = stream;
+    })
+    .catch(function (err0r) {
+      console.log("Something went wrong!");
+    });
+}
+
 var i = 1;
 
 var append1Function = setInterval(function(){

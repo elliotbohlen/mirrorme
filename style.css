@@ -16,21 +16,32 @@ p{
   font-size:2rem;
   line-height: .8;
   width:300px;
-
 }
 em{
-
   font-family:serif;
   /*text-shadow: 10px 10px 20px blue;*/
   font-size: 2.5rem;
   line-height: .8;
 }
+
+a{
+  display:block;
+  width:100px;
+}
+video{
+  width: 100px;
+  height: 100px;
+}
+
+
 #text{
   position:absolute;
   top:0px;
   left:0px;
   z-index:-10;
 }
+
+
 
 
 #box1{
@@ -61,13 +72,13 @@ em{
 #box6{
   position:fixed;
   right:10px;
-  top:-20px;
+  top:20px;
 }
 
 #box7{
   position:fixed;
   right:10px;
-  top:-20px;
+  top:70px;
 }
 
 #box8{
