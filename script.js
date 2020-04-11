@@ -39,7 +39,7 @@ var append1Function = setInterval(function(){
    right:${i * 20}px;
    top:${rando * 40}px;
    z-index:${rando};
-   "><img src="images/edited/ovaltop2.png"></div>`;
+   "><img src="images/edited/ovaltop.png"></div>`;
  document.getElementById("box4").insertAdjacentHTML("beforeend", pic4);
 
  var pic5 = `<div class="patternunit" style="
