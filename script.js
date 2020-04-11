@@ -27,7 +27,7 @@ var append1Function = setInterval(function(){
 
  var pic4 = `<div class="patternunit" style="
    right:${i * 20}px;
-   top:${rando * 20}px;
+   top:${rando * 40}px;
    z-index:${rando};
    "><img src="images/edited/ovaltop2.png"></div>`;
  document.getElementById("box4").insertAdjacentHTML("beforeend", pic4);
