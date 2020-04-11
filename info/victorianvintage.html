@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+   <link rel="stylesheet" type="text/css" href="info.css">
+   <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+   <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <title>mirrorme</title>
+  </head>
+  <body>
+
+      <div id="box6"></div>
+    <div id='grid'>
+      <div id="info">
+        <p>Large Rare R<em>o</em>mantic Antique Cream French R<em>o</em>c<em>o</em>c<em>o</em> <em>O</em>rnate Fancy Hand Carved Gess<em>o</em> Wall hanging Mirr<em>o</em>r.
+
+        Be the envy <em>o</em>f all with this handcrafted hand carved beautiful mirr<em>o</em>r. Abs<em>o</em>lutely stunning with fancy fretw<em>o</em>rk, rich f<em>o</em>liage, fl<em>o</em>ral hand carvings.
+
+        Mirr<em>o</em>r is in amazing c<em>o</em>nditi<em>o</em>n and will n<em>o</em>t disapp<em>o</em>int.
+
+        Measures: 69" wide x 49" tall x 4" deep.
+
+        Als<em>o</em> available: Large matching wardr<em>o</em>be, dresser, headb<em>o</em>ard, f<em>oo</em>tb<em>o</em>ard and tw<em>o</em> matching nightstands.
+
+
+        Can deliver f<em>o</em>r a small fee
+        Cash <em>O</em>nly
+        c<em>o</em>nditi<em>o</em>n: excellent
+        size / dimensi<em>o</em>ns: 69x49x4
+        vintage Walnut framed mirr<em>o</em>r with ledge - $475
+</p>
+      </div>
+      <div id="line"> </div>
+      <div id="lore">
+        <p>  The belief that the s<em>o</em>ul pr<em>o</em>jects <em>o</em>ut <em>o</em>f the b<em>o</em>dy and int<em>o</em> mirr<em>o</em>rs in the f<em>o</em>rm <em>o</em>f reflecti<em>o</em>n underlies perhaps the m<em>o</em>st widely kn<em>o</em>wn
+          mirr<em>o</em>r superstiti<em>o</em>n:
+          that breaking a mirr<em>o</em>r brings seven years' bad luck. Many believed that breaking a mirr<em>o</em>r als<em>o</em> br<em>o</em>ke the s<em>o</em>ul <em>o</em>f the <em>o</em>ne wh<em>o</em> br<em>o</em>ke it. The s<em>o</em>ul, s<em>o</em> angered at being hurt, exacted seven years <em>o</em>f bad luck in payment f<em>o</em>r such carelessness.</p>
+      </div>
+    </div>
+
+
+
+    <!--<p>Large Rare Romantic Antique Cream French Rococo Ornate Fancy Hand Carved Gesso Wall hanging <em>Mirror</em>.
+
+    Be the envy of all with this handcrafted/ hand carved beautiful <em>mirror</em>. Absolutely stunning with fancy fretwork, rich foliage, floral hand carvings.
+
+    <em>Mirror</em> is in amazing condition and will not disappoint.
+
+    Measures: 69" wide x 49" tall x 4" deep.
+
+    Also available: Large matching wardrobe, dresser, headboard, footboard and two matching nightstands.
+
+
+    Can deliver for a small fee
+    Cash Only
+    condition: excellent
+    size / dimensions: 69x49x4
+    vintage Walnut framed <em>mirror</em> with ledge - $475
+</p>
+  </div>
+  <div id="line"> </div>
+  <div id="lore">
+    <p>  The belief that the soul projects out of the body and into <em>mirrors</em> in the form of reflection underlies perhaps the most widely known <em>mirror</em> superstition: that breaking a <em>mirror</em> brings seven years' bad luck. Many believed that breaking a <em>mirror</em> also broke the soul of the one who broke it. The soul, so angered at being hurt, exacted seven years of bad luck in payment for such carelessness.</p>
+  </div>
+</div> -->
+<div id="wrapper"></div>
+    <script type="text/javascript">
+    var i = 1;
+
+    var append1Function = setInterval(function(){
+      var rando = Math.floor(Math.random() * 10) + 1;
+      var pic6 = `<div class="patternunit" style="
+        right:${rando * 90}px;
+        top:${rando * 60}px;
+        "><img src="images/edited/VictorianVintage.png"></div>`;
+      document.getElementById("box6").insertAdjacentHTML("beforeend", pic6);
+      if (i >= 1) {
+        // defining the maximum amount of cycles
+       clearInterval(append1Function);
+      }
+      i++;
+    },300); </script>
+  </body>
+</html>

@@ -1,0 +1,64 @@
+body{
+  padding:10px;
+  background-color:lavenderblush;
+}
+p{
+  font-family: sans-serif;
+  margin:0px;
+  font-size: 3rem;
+  line-height: .9;
+}
+img{
+  width:auto;
+  height:100px;
+}
+
+em{
+  font-family:serif;
+  /*text-shadow: 10px 10px 20px blue;*/
+  font-size: 3.6rem;
+
+}
+
+#wrapper{
+  position:fixed;
+  background: url('images/craigslist/VictorianVintageAntiqueFrench.jpg') no-repeat;
+  background-size: 100%;
+
+}
+#grid{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: stretch;
+  height: 100vh;
+}
+
+#info{
+  padding:20px;
+  width:49vw;
+}
+#lore{
+  padding:20px;
+  width:49vw;
+  text-align: right;
+}
+#line{
+  position:absolute;
+  width:2px;
+  top:-20px;
+  height:180vh;
+  background-color:black;
+}
+
+
+
+.patternunit{
+    position:absolute;
+    display:inline-block;
+}
+#box6{
+  position:fixed;
+  right:10px;
+  top:-20px;
+}
