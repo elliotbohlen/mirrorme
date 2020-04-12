@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+   <link rel="stylesheet" type="text/css" href="info.css">
+   <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+   <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <link rel="icon" href="../images/edited/vintageWalnutframed.png" type="image/gif" sizes="16x16">
+    <title>mirrorme</title>
+  <style> body{
+    background-color:lightskyblue;
+    background-image: url("..a/images/craigslist/vintageWalnut framed.jpg");
+    background-repeat: no-repeat;
+    }
+  </style>
+  </head>
+  <body>
+    <div id="box"></div>
+
+    <div id='grid'>
+      <div id="info">
+        <p><a href="https://newyork.craigslist.org/brk/fuo/d/brooklyn-vintage-walnut-framed-mirror/7105238255.html">vintage</a> Walnut framed mirr<em>o</em>r with ledge. very c<em>oo</em>l. S<em>o</em>lid walnut frame with shelf / ledge t<em>o</em>p and b<em>o</em>tt<em>o</em>m. Label missing t<em>o</em> back but likely danish p<em>o</em>ssibly American but definitely a s<em>o</em>lid high quality designer item. Has a wire t<em>o</em> hang. Mid century m<em>o</em>dern.
+        </p>
+      </div>
+      <div id="line" style="height: 110vh;"> </div>
+      <div id="lore">
+        <p><a href="https://newyork.craigslist.org/brk/fuo/d/brooklyn-vintage-walnut-framed-mirror/7105238255.html">vintage</a> Walnut framed mirr<em>o</em>r with ledge. very c<em>oo</em>l. S<em>o</em>lid walnut frame with shelf / ledge t<em>o</em>p and b<em>o</em>tt<em>o</em>m. Label missing t<em>o</em> back but likely danish p<em>o</em>ssibly American but definitely a s<em>o</em>lid high quality designer item. Has a wire t<em>o</em> hang. Mid century m<em>o</em>dern.
+        </p>
+      </div>
+    </div>
+
+  <script type="text/javascript">
+    var i = 1;
+    var append1Function = setInterval(function(){
+      var rando = Math.floor(Math.random() * 10) + 1;
+      var pic = `<div class="patternunit" style="
+        right:${rando * 90}px;
+        top:${rando * 60}px;
+        transform: scale(2.5);
+        "><img src="../images/craigslist/vintageWalnut framed.jpg"></div>`;
+      document.getElementById("box").insertAdjacentHTML("beforeend", pic);
+      if (i >= 1) {
+        // defining the maximum amount of cycles
+       clearInterval(append1Function);
+      }
+      i++;
+    },300); </script>
+  </body>
+</html>

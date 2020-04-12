@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+   <link rel="stylesheet" type="text/css" href="info.css">
+   <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+   <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <link rel="icon" href="../images/edited/ovaltop.png" type="image/gif" sizes="16x16">
+    <title>mirrorme</title>
+  <style> body{
+    background-color:lightblue;
+    }
+  </style>
+  </head>
+  <body>
+    <div id="box"></div>
+
+    <div id='grid'>
+      <div id="info">
+        <p><a href="https://newyork.craigslist.org/que/fuo/d/locust-valley-oval-top-mirror/7099091378.html">Beautiful</a>
+          and large <em>O</em>val T<em>o</em>p Mirr<em>o</em>r t<em>o</em> place <em>o</em>n t<em>o</em>p <em>o</em>f y<em>o</em>ur fav<em>o</em>rite bedr<em>oo</em>m dresser. Featuring a str<em>o</em>ng and s<em>o</em>lid g<em>o</em>ld t<em>o</em>ne metal frame and heavy glass. It measures 42H x 30W and is made the Standard Furniture C<em>o</em>mpany. Very g<em>oo</em>d c<em>o</em>nditi<em>o</em>n. $40 is a firm price. I am in l<em>o</em>ng island, near the glen c<em>o</em>ve area.
+        </p>
+      </div>
+      <div id="line" style="height: 110vh;"> </div>
+      <div id="lore">
+        <p><a href="https://newyork.craigslist.org/que/fuo/d/locust-valley-oval-top-mirror/7099091378.html">Beautiful</a>
+          and large <em>O</em>val T<em>o</em>p Mirr<em>o</em>r t<em>o</em> place <em>o</em>n t<em>o</em>p <em>o</em>f y<em>o</em>ur fav<em>o</em>rite bedr<em>oo</em>m dresser. Featuring a str<em>o</em>ng and s<em>o</em>lid g<em>o</em>ld t<em>o</em>ne metal frame and heavy glass. It measures 42H x 30W and is made the Standard Furniture C<em>o</em>mpany. Very g<em>oo</em>d c<em>o</em>nditi<em>o</em>n. $40 is a firm price. I am in l<em>o</em>ng island, near the glen c<em>o</em>ve area.
+        </p>
+      </div>
+    </div>
+
+  <script type="text/javascript">
+    var i = 1;
+    var append1Function = setInterval(function(){
+      var rando = Math.floor(Math.random() * 10) + 1;
+      var pic = `<div class="patternunit" style="
+        right:${rando * 90}px;
+        top:${rando * 60}px;
+        transform: scale(2.5);
+        "><img src="../images/craigslist/OvalTop.jpg"></div>`;
+      document.getElementById("box").insertAdjacentHTML("beforeend", pic);
+      if (i >= 1) {
+        // defining the maximum amount of cycles
+       clearInterval(append1Function);
+      }
+      i++;
+    },300); </script>
+  </body>
+</html>

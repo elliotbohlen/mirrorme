@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+   <link rel="stylesheet" type="text/css" href="info.css">
+   <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+   <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <link rel="icon" href="../images/edited/Largemirror(candeliver).png" type="image/gif" sizes="16x16">
+    <title>mirrorme</title>
+  <style> body{
+    background-color:lemonchiffon;
+    }
+  </style>
+  </head>
+  <body>
+    <div id="box"></div>
+
+    <div id='grid'>
+      <div id="info">
+        <p><a href="https://newyork.craigslist.org/brk/fuo/d/brooklyn-large-mirror-can-deliver/7100114473.html">Large</a> mirr<em>or</em> (can deliver).
+          Price is firm. Priced l<em>o</em>w t<em>o</em> g<em>o</em> fast. N<em>o</em> best <em>o</em>ffers.
+        G<em>o</em>lden w<em>oo</em>d frame
+        Excellent c<em>o</em>nditi<em>o</em>n
+        Can deliver in Br<em>oo</em>klyn 20$ near y<em>o</em>ur building, Manhattan 30$ near y<em>o</em>ur building
+        c<em>o</em>nditi<em>o</em>n: excellent
+        28”x17”
+</p>
+      </div>
+      <div id="line" style="height: 110vh;"> </div>
+      <div id="lore">
+        <p>
+          <a href="https://newyork.craigslist.org/brk/fuo/d/brooklyn-large-mirror-can-deliver/7100114473.html">Large</a> mirr<em>or</em> (can deliver).
+          Price is firm. Priced l<em>o</em>w t<em>o</em> g<em>o</em> fast. N<em>o</em> best <em>o</em>ffers.
+        G<em>o</em>lden w<em>oo</em>d frame
+        Excellent c<em>o</em>nditi<em>o</em>n
+        Can deliver in Br<em>oo</em>klyn 20$ near y<em>o</em>ur building, Manhattan 30$ near y<em>o</em>ur building
+        c<em>o</em>nditi<em>o</em>n: excellent
+        28”x17”
+      </p>
+      </div>
+    </div>
+
+  <script type="text/javascript">
+    var i = 1;
+    var append1Function = setInterval(function(){
+      var rando = Math.floor(Math.random() * 10) + 1;
+      var pic = `<div class="patternunit" style="
+        right:${rando * 90}px;
+        top:${rando * 60}px;
+        transform: scale(2.5);
+        "><img src="../images/craigslist/Largemirror(candeliver).jpg"></div>`;
+      document.getElementById("box").insertAdjacentHTML("beforeend", pic);
+      if (i >= 1) {
+        // defining the maximum amount of cycles
+       clearInterval(append1Function);
+      }
+      i++;
+    },300); </script>
+  </body>
+</html>

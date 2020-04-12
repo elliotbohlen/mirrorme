@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+   <link rel="stylesheet" type="text/css" href="info.css">
+   <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+   <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <link rel="icon" href="../images/edited/Antique,HandCarved.png" type="image/gif" sizes="16x16">
+    <title>mirrorme</title>
+  <style> body{
+    background-color:steelblue;
+    }
+  </style>
+  </head>
+  <body>
+    <div id="box"></div>
+
+    <div id='grid'>
+      <div id="info">
+        <p><a href="https://newyork.craigslist.org/mnh/fuo/d/new-york-antique-hand-carved-frame-with/7097525693.html">Antique</a> Hand-Carved Frame with <em>O</em>val Mirr<em>o</em>r - $185. The <em>o</em>verall frame measures appr<em>o</em>ximately 31 1/2" x 22". Measure the space y<em>o</em>u plan t<em>o</em> hang the mirr<em>o</em>r t<em>o</em> be sure it's n<em>o</em>t t<em>oo</em> large or t<em>oo</em> small f<em>o</em>r the space.
+        </p>
+      </div>
+      <div id="line" style="height: 110vh;"> </div>
+      <div id="lore">
+        <p><a href="https://newyork.craigslist.org/mnh/fuo/d/new-york-antique-hand-carved-frame-with/7097525693.html">Antique</a> Hand-Carved Frame with <em>O</em>val Mirr<em>o</em>r - $185. The <em>o</em>verall frame measures appr<em>o</em>ximately 31 1/2" x 22". Measure the space y<em>o</em>u plan t<em>o</em> hang the mirr<em>o</em>r t<em>o</em> be sure it's n<em>o</em>t t<em>oo</em> large or t<em>oo</em> small f<em>o</em>r the space.
+        </p>
+      </div>
+    </div>
+
+  <script type="text/javascript">
+    var i = 1;
+    var append1Function = setInterval(function(){
+      var rando = Math.floor(Math.random() * 10) + 1;
+      var pic = `<div class="patternunit" style="
+        right:${rando * 90}px;
+        top:${rando * 60}px;
+        transform: scale(2.5);
+        "><img src="../images/craigslist/AntiqueHand.jpg"></div>`;
+      document.getElementById("box").insertAdjacentHTML("beforeend", pic);
+      if (i >= 1) {
+        // defining the maximum amount of cycles
+       clearInterval(append1Function);
+      }
+      i++;
+    },300); </script>
+  </body>
+</html>

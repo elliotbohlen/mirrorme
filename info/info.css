@@ -1,6 +1,6 @@
 body{
   padding:10px;
-  background-color:lavenderblush;
+  
 }
 p{
   font-family: sans-serif;
@@ -17,14 +17,12 @@ em{
   font-family:serif;
   /*text-shadow: 10px 10px 20px blue;*/
   font-size: 3.6rem;
-
 }
 
-#wrapper{
-  position:fixed;
-  background: url('images/craigslist/VictorianVintageAntiqueFrench.jpg') no-repeat;
-  background-size: 100%;
-
+a{
+}
+a:visited{
+  color:blue;
 }
 #grid{
   display: flex;
@@ -40,10 +38,10 @@ em{
 }
 #lore{
   -moz-transform: scale(-1, 1);
--webkit-transform: scale(-1, 1);
--o-transform: scale(-1, 1);
--ms-transform: scale(-1, 1);
-transform: scale(-1, 1);
+  -webkit-transform: scale(-1, 1);
+  -o-transform: scale(-1, 1);
+  -ms-transform: scale(-1, 1);
+  transform: scale(-1, 1);
   padding:20px;
   width:49vw;
 }
@@ -51,18 +49,12 @@ transform: scale(-1, 1);
   position:absolute;
   width:2px;
   top:-20px;
-  height:180vh;
+  height:170vh;
   background-color:black;
 }
 
-
-
 .patternunit{
+    z-index: 9;
     position:absolute;
     display:inline-block;
-}
-#box6{
-  position:fixed;
-  right:10px;
-  top:-20px;
 }

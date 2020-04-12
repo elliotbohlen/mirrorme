@@ -3,7 +3,7 @@
     padding:0px;
 }
 body{
-  background-color: snow;
+  background-color: mediumblue;
 }
 img{
   width:auto;
@@ -19,7 +19,6 @@ p{
 }
 em{
   font-family:serif;
-  /*text-shadow: 10px 10px 20px blue;*/
   font-size: 2.5rem;
   line-height: .8;
 }
@@ -27,6 +26,9 @@ em{
 a{
   display:block;
   width:100px;
+}
+a:visited{
+  color:blue;
 }
 video{
   width: 100px;
@@ -66,12 +68,12 @@ video{
 }
 #box5{
   position:fixed;
-  left:10px;
+  left:700px;
   top:200px;
 }
 #box6{
   position:fixed;
-  right:10px;
+  right:700px;
   top:20px;
 }
 
@@ -94,19 +96,7 @@ video{
 }
 
 
-
-
-
-
 .patternunit{
     position:absolute;
-    display:inline-block;
-}
-
-.patternunit2{
-    position:absolute;
-    display:inline-block;
-    height:200px;
-    width: 200px;
-   border-left: 1.8px dotted white;
+    display: inline-block;
 }
