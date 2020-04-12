@@ -31,8 +31,8 @@ a:visited{
   color:blue;
 }
 video{
-  width: 100px;
-  height: 100px;
+  width: 100vw;
+  height: 100vh;
 }
 
 
@@ -94,8 +94,16 @@ video{
   right:0px;
   top:0px;
 }
-
-
+#box10{
+  position:fixed;
+  right:0px;
+  bottom:200px;
+}
+#box11{
+  position:fixed;
+  right:0px;
+  top:0px;
+}
 .patternunit{
     position:absolute;
     display: inline-block;

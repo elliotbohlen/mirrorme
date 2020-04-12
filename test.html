@@ -5,84 +5,32 @@
 <title>tests Webcam Stream</title>
 
 <style>
-#grid{
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: stretch;
-  height: 100vh;
-}
-		.parent{
-		width: 300px;
-		height: 150px;
-		background: #333;
-		color: #fff;
-		text-align: center;
-		}
-		.default{
-		width: 300px;
-		height: 150px;
-		background: red;
-		}
-		.hover{
-		background: blue;
-		width: 1000px;
-		height: 150px;
-		display: none;
-		}
-		.parent:hover .default{
-		display: none;
-		}
-		.parent:hover .hover{
-		display: block;
-		}
-
-		.parent2{
-		width: 300px;
-		height: 150px;
-		background: #333;
-		color: #fff;
-		text-align: center;
-		}
-		.default2{
-		width: 300px;
-		height: 150px;
-		background: red;
-		}
-		.hover2{
-		background: blue;
-		width:1000px;
-		height: 150px;
-		display: none;
-		}
-		.parent2:hover .default2{
-		display: none;
-		}
-		.parent2:hover .hover2{
-		display: block;
-		}
-
+  img{width:100vw;
+  height:auto}
+  video{
+    Z-index:-10;
+    position:absolute;
+    top:100px;
+    left:300px;
+  }
 </style>
 </head>
-
 <body>
-	<div id="grid">
-	<div class="parent">
-	  <div class="default">
-	    Hover me!
-	  </div>
-	  <div class="hover">
-	    Hai!
-	  </div>
-	</div>
-	<div class="parent2">
-		<div class="default2">
-			Hover me!
-		</div>
-		<div class="hover2">
-			Hai!
-		</div>
-	</div>
-</div>
+  <img src="landing.png">
+	<video autoplay="true" class="videoElement"></video>
+
+  <script>
+  var video = document.querySelector(".videoElement");
+
+  if (navigator.mediaDevices.getUserMedia) {
+    navigator.mediaDevices.getUserMedia({ video: true })
+      .then(function (stream) {
+        video.srcObject = stream;
+      })
+      .catch(function (err0r) {
+        console.log("Something went wrong!");
+      });
+  }
+</script>
 </body>
 </html>
