@@ -35,7 +35,6 @@ var append1Function = setInterval(function(){
  var pic3 = `<div class="patternunit" style="
    right:${i * 20}px;
    top:${rando * 20}px;
-
    transform: scale(${(i+4)/10});
    "><img src="images/edited/verysolid.png"></div>`;
  document.getElementById("box3").insertAdjacentHTML("beforeend", pic3);
@@ -83,7 +82,7 @@ var append1Function = setInterval(function(){
  var pic9 = `<div class="patternunit" style="
    right:${i * 90}px;
    top:${rando * 20}px;
-   transform: scale(.${(i*4)/10});
+   transform: scale(${(i+4)/10});
 
    "><img src="images/edited/large_5105e7a81fbd679bed23113b2c57db2b.png"></div>`;
  document.getElementById("box9").insertAdjacentHTML("beforeend", pic9);
@@ -91,57 +90,52 @@ var append1Function = setInterval(function(){
 
 
 
-
+//unedited pos below
 
 
 
 
  var pic10 = `<div class="patternunit" style="
    right:${i * 90}px;
-   top:${rando * 20}px;
-   transform: scale(.${(i*4)/10});
-
+   bottom:${rando * 20}px;
+   transform: scale(${(i+4)/10});
    "><img src="images/edited/DoubleSidedRollingcopy.png"></div>`;
  document.getElementById("box10").insertAdjacentHTML("beforeend", pic10);
 
  var pic11 = `<div class="patternunit" style="
-   right:${i * 90}px;
-   top:${rando * 20}px;
-   transform: scale(.${(i*4)/10});
-
+   right:${rando * 90}px;
+   top:${i * 20}px;
+   transform: scale(${(i+4)/10});
    "><img src="images/edited/AntiqueMirror150.png"></div>`;
  document.getElementById("box11").insertAdjacentHTML("beforeend", pic11);
 
  var pic12 = `<div class="patternunit" style="
    right:${i * 90}px;
    top:${rando * 20}px;
-   transform: scale(.${(i*4)/10});
-
+   transform: scale(${(i+4)/10});
    "><img src="images/edited/Antiquedresserwithmirror.png"></div>`;
  document.getElementById("box12").insertAdjacentHTML("beforeend", pic12);
 
  var pic13 = `<div class="patternunit" style="
    right:${i * 90}px;
    top:${rando * 20}px;
-   transform: scale(.${(i*4)/10});
-
+   transform: scale(${(i+4)/10});
    "><img src="images/edited/SunRays.png
 "></div>`;
  document.getElementById("box13").insertAdjacentHTML("beforeend", pic13);
 
  var pic14 = `<div class="patternunit" style="
-   right:${i * 90}px;
-   top:${rando * 20}px;
-   transform: scale(.${(i*4)/10});
-
-   "><img src="images/edited/AntiqueMirror.png
+   left:${i * 90}px;
+   bottom:${rando * 20}px;
+   transform: scale(${(i+4)/10});
+   "><img src="images/edited/retro-look.png
 "></div>`;
  document.getElementById("box14").insertAdjacentHTML("beforeend", pic14);
 
  var pic15 = `<div class="patternunit" style="
    right:${i * 90}px;
    top:${rando * 20}px;
-   transform: scale(.${(i*4)/10});
+   transform: scale(${(i+4)/10});
 
    "><img src="images/edited/AntiqueVanitywithMirror.png
 "></div>`;
