@@ -16,10 +16,12 @@ img{
 em{
   font-family:serif;
   /*text-shadow: 10px 10px 20px blue;*/
-  font-size: 3.6rem;
+  font-size: 3.5rem;
 }
 
 a{
+  font-family:serif;
+  font-size: 3.5rem;
 }
 a:visited{
   color:blue;
