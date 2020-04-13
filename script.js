@@ -61,7 +61,7 @@ var append1Function = setInterval(function(){
  document.getElementById("box6").insertAdjacentHTML("beforeend", pic6);
 
  var pic7 = `<div class="patternunit" style="
-   right:${i * 90}px;
+   left:${i * 20}px;
    top:${i * 20}px;
    transform: scale(${(i+4)/10}); opacity:.${x};
    "><img src="images/edited/sunrayscopy.png"></div>`;
@@ -76,8 +76,8 @@ var append1Function = setInterval(function(){
  document.getElementById("box8").insertAdjacentHTML("beforeend", pic8);
 
  var pic9 = `<div class="patternunit" style="
-   right:${i * 90}px;
-   top:${i}px;
+   right:${i * 40}px;
+   top:${i*10}px;
    transform: scale(${(i+4)/10}); opacity:${x};
    "><img src="images/edited/large.png"></div>`;
  document.getElementById("box9").insertAdjacentHTML("beforeend", pic9);
@@ -91,8 +91,8 @@ var append1Function = setInterval(function(){
 
 
  var pic10 = `<div class="patternunit" style="
-   right:${i * 90}px;
-   bottom:${i * 20}px;
+   left:${i * 90}px;
+   top:${i * 20}px;
    transform: scale(${(i+4)/10}); opacity:.${x};
    "><img src="images/edited/DoubleSidedRollingcopy.png"></div>`;
  document.getElementById("box10").insertAdjacentHTML("beforeend", pic10);
@@ -142,7 +142,7 @@ var append1Function = setInterval(function(){
  }
  i++;
  x++;
-},500); //speed in ms
+},1000); //speed in ms
 
 
 $( function() {

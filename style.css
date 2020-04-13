@@ -7,7 +7,7 @@ body{
 }
 img{
   width:auto;
-  height:100px;
+  height:150px;
 }
 p{
   padding-left: 20px;
@@ -60,7 +60,7 @@ video{
 #box1{
   position:fixed;
   top:100px;
-  left:50%;
+  left: 700px;
 }
 
 #box2{
@@ -93,8 +93,8 @@ video{
 
 #box7{
   position:fixed;
-  right:10px;
-  top:200px;
+  left:80px;
+  top:20px;
 }
 
 #box8{
@@ -110,8 +110,8 @@ video{
 }
 #box10{
   position:fixed;
-  right:10px;
-  bottom:200px;
+  left:200px;
+  top:10px;
 }
 #box11{
   position:fixed;
@@ -121,7 +121,7 @@ video{
 #box12{
   position:fixed;
   right:100px;
-  bottom:300px;
+  bottom:400px;
 }
 #box13{
   position:fixed;

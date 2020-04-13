@@ -5,7 +5,7 @@ body{
 p{
   font-family: sans-serif;
   margin:0px;
-  font-size: 3rem;
+  font-size: 2.5rem;
   line-height: .9;
 }
 img{
@@ -16,12 +16,12 @@ img{
 em{
   font-family:serif;
   /*text-shadow: 10px 10px 20px blue;*/
-  font-size: 3.5rem;
+  font-size: 3rem;
 }
 
 a{
   font-family:serif;
-  font-size: 3.5rem;
+  font-size: 3rem;
 }
 a:visited{
   color:blue;
