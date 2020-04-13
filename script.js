@@ -41,7 +41,7 @@ var append1Function = setInterval(function(){
    right:${i * 20}px;
    top:${i * 40}px;
    transform: scale(${(i+4)/10}); opacity:.${i};
-   "><img src="images/edited/ovaltop.png"></div>`;
+   "><img src="images/edited/ovaltopcopy.png"></div>`;
  document.getElementById("box4").insertAdjacentHTML("beforeend", pic4);
 
  var pic5 = `<div class="patternunit" style="
@@ -63,7 +63,7 @@ var append1Function = setInterval(function(){
    right:${i * 90}px;
    top:${i * 20}px;
    transform: scale(${(i+4)/10}); opacity:.${i};
-   "><img src="images/edited/sunrays.png"></div>`;
+   "><img src="images/edited/sunrayscopy.png"></div>`;
  document.getElementById("box7").insertAdjacentHTML("beforeend", pic7);
 
  var pic8 = `<div class="patternunit" style="
@@ -71,7 +71,7 @@ var append1Function = setInterval(function(){
    top:${i * 20}px;
    transform: scale(${(i+4)/10}); opacity:.${i};
 
-   "><img src="images/edited/retro-look.png"></div>`;
+   "><img src="images/edited/retrolookcopy.png"></div>`;
  document.getElementById("box8").insertAdjacentHTML("beforeend", pic8);
 
  var pic9 = `<div class="patternunit" style="
