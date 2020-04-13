@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+   <link rel="stylesheet" type="text/css" href="info.css">
+    <link rel="icon" href="../images/Infinity_Mirror_Effect.jpg" type="image/gif" sizes="16x16">
+    <title>mirrorme</title>
+  <style> body{
+    }
+  </style>
+  </head>
+  <body>
+    <div id="box"></div>
+
+    <div id='grid'>
+      <div id="info">
+        <p>
+          <a href="https://newyork.craigslist.org/mnh/fuo/d/new-york-city-antique-mirror/7104703295.html">Mise</a>
+           en abyme is a f<em>o</em>rmal technique <em>o</em>f placing a c<em>o</em>py <em>o</em>f an image within itself, <em>o</em>ften in a way that suggests an infinitely recurring sequence. In film the<em>o</em>ry and literary the<em>o</em>ry, it refers t<em>o</em> the technique <em>o</em>f inserting a st<em>o</em>ry within a st<em>o</em>ry. The term is derived fr<em>o</em>m heraldry and literally means "placed int<em>o</em> abyss". It was first appr<em>o</em>priated f<em>o</em>r m<em>o</em>dern criticism by the French auth<em>o</em>r André Gide.
+        </p>
+      </div>
+      <div id="line" style="height: 125vh;"> </div>
+      <div id="lore">
+        <p>
+          <a href="https://en.wikipedia.org/wiki/Mise_en_abyme">Mise</a>
+           en abyme is a f<em>o</em>rmal technique <em>o</em>f placing a c<em>o</em>py <em>o</em>f an image within itself, <em>o</em>ften in a way that suggests an infinitely recurring sequence. In film the<em>o</em>ry and literary the<em>o</em>ry, it refers t<em>o</em> the technique <em>o</em>f inserting a st<em>o</em>ry within a st<em>o</em>ry. The term is derived fr<em>o</em>m heraldry and literally means "placed int<em>o</em> abyss". It was first appr<em>o</em>priated f<em>o</em>r m<em>o</em>dern criticism by the French auth<em>o</em>r André Gide.
+        </p>
+      </div>
+    </div>
+
+  <script type="text/javascript">
+    var i = 1;
+    var append1Function = setInterval(function(){
+      var rando = Math.floor(Math.random() * 10) + 1;
+      var pic = `<div class="patternunit" style="
+        right:${rando * 90}px;
+        top:${rando * 60}px;
+        transform: scale(2.5);
+        "><img src="../images/craigslist/AntiqueMirror$150.jpg"></div>`;
+      document.getElementById("box").insertAdjacentHTML("beforeend", pic);
+      if (i >= 1) {
+        // defining the maximum amount of cycles
+       clearInterval(append1Function);
+      }
+      i++;
+    },300); </script>
+  </body>
+</html>

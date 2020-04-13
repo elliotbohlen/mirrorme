@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+   <link rel="stylesheet" type="text/css" href="info.css">
+    <link rel="icon" href="../images/Infinity_Mirror_Effect.jpg" type="image/gif" sizes="16x16">
+    <title>mirrorme</title>
+  <style> body{
+    }
+  </style>
+  </head>
+  <body>
+    <div id="box"></div>
+
+    <div id='grid'>
+      <div id="info">
+        <p>
+          <a href="https://newyork.craigslist.org/fct/hab/d/greenwich-double-sided-rolling-mirror/7090934822.html?lang=en&cc=gb">Mise</a>
+           en abyme is a play <em>o</em>f signifiers within a text, <em>o</em>f sub-texts mirr<em>o</em>ring each <em>o</em>ther. This mirr<em>o</em>ring can attain a level where meaning may bec<em>o</em>me unstable and, in this respect, may be seen as part <em>o</em>f the pr<em>o</em>cess <em>o</em>f dec<em>o</em>nstructi<em>o</em>n.
+        </p>
+      </div>
+      <div id="line" style="height: 100vh;"> </div>
+      <div id="lore">
+        <p>
+          <a href="https://en.wikipedia.org/wiki/Mise_en_abyme">Mise</a>
+           en abyme is a play <em>o</em>f signifiers within a text, <em>o</em>f sub-texts mirr<em>o</em>ring each <em>o</em>ther. This mirr<em>o</em>ring can attain a level where meaning may bec<em>o</em>me unstable and, in this respect, may be seen as part <em>o</em>f the pr<em>o</em>cess <em>o</em>f dec<em>o</em>nstructi<em>o</em>n.
+         </p>
+      </div>
+    </div>
+
+  <script type="text/javascript">
+    var i = 1;
+    var append1Function = setInterval(function(){
+      var rando = Math.floor(Math.random() * 10) + 1;
+      var pic = `<div class="patternunit" style="
+        right:${rando * 90}px;
+        top:${rando * 60}px;
+        transform: scale(2.5);
+        "><img src="../images/craigslist/doublesided.jpg"></div>`;
+      document.getElementById("box").insertAdjacentHTML("beforeend", pic);
+      if (i >= 1) {
+        // defining the maximum amount of cycles
+       clearInterval(append1Function);
+      }
+      i++;
+    },300); </script>
+  </body>
+</html>

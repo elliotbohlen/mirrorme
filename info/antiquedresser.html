@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+   <link rel="stylesheet" type="text/css" href="info.css">
+    <link rel="icon" href="../images/Infinity_Mirror_Effect.jpg" type="image/gif" sizes="16x16">
+    <title>mirrorme</title>
+  <style> body{
+    }
+  </style>
+  </head>
+  <body>
+    <div id="box"></div>
+
+    <div id='grid'>
+      <div id="info">
+        <p>
+          <a href="https://newyork.craigslist.org/que/fuo/d/astoria-antique-dresser-with-mirror/7091675296.html">Breaking</a>
+          a mirr<em>o</em>r brings seven years <em>o</em>f bad luck, many cultures believe that breaking a mirr<em>o</em>r als<em>o</em> breaks the s<em>o</em>ul <em>o</em>f the <em>o</em>ne wh<em>o</em> br<em>o</em>ke it. The s<em>o</em>ul, angered at being hurt, exacts seven years <em>o</em>f bad luck in payment f<em>o</em>r such carelessness. The R<em>o</em>mans attributed the bad luck t<em>o</em> their belief that life renews itself every seven years. T<em>o</em> break mirr<em>o</em>r meant breaking <em>o</em>ne's health, and this c<em>o</em>uld n<em>o</em>t be remedied f<em>o</em>r seven years.
+
+        </p>
+      </div>
+      <div id="line" style="height: 110vh;"> </div>
+      <div id="lore">
+        <p>
+          <a href="http://www.supernaturalwiki.com/Mirror_Folklore">Breaking</a>
+          a mirr<em>o</em>r brings seven years <em>o</em>f bad luck, many cultures believe that breaking a mirr<em>o</em>r als<em>o</em> breaks the s<em>o</em>ul <em>o</em>f the <em>o</em>ne wh<em>o</em> br<em>o</em>ke it. The s<em>o</em>ul, angered at being hurt, exacts seven years <em>o</em>f bad luck in payment f<em>o</em>r such carelessness. The R<em>o</em>mans attributed the bad luck t<em>o</em> their belief that life renews itself every seven years. T<em>o</em> break mirr<em>o</em>r meant breaking <em>o</em>ne's health, and this c<em>o</em>uld n<em>o</em>t be remedied f<em>o</em>r seven years.
+        </p>
+      </div>
+    </div>
+
+  <script type="text/javascript">
+    var i = 1;
+    var append1Function = setInterval(function(){
+      var rando = Math.floor(Math.random() * 10) + 1;
+      var pic = `<div class="patternunit" style="
+        right:${rando * 90}px;
+        top:${rando * 60}px;
+        transform: scale(2.5);
+        "><img src="../images/craigslist/Antiquedresser.jpg"></div>`;
+      document.getElementById("box").insertAdjacentHTML("beforeend", pic);
+      if (i >= 1) {
+        // defining the maximum amount of cycles
+       clearInterval(append1Function);
+      }
+      i++;
+    },300); </script>
+  </body>
+</html>

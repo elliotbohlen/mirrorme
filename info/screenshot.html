@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+   <link rel="stylesheet" type="text/css" href="info.css">
+    <link rel="icon" href="../images/Infinity_Mirror_Effect.jpg" type="image/gif" sizes="16x16">
+    <title>mirrorme</title>
+  </head>
+  <body>
+    <div id="box"></div>
+
+    <div id='grid'>
+      <div id="info">
+        <p><a href="https://newyork.craigslist.org/mnh/fuo/d/new-york-antique-mirror/7104203564.html">In</a>
+        In this mirr<em>o</em>r w<em>o</em>rld, things are the same and different. There are n<em>o</em> straight, l<em>o</em>gical paths, and events happen backwards. Instead <em>o</em>f there being a cause and effect, in the l<em>o</em><em>o</em>king glass w<em>o</em>rld, the <em>o</em>utc<em>o</em>me happens first and then the cause.
+        </p>
+      </div>
+      <div id="line" style="height: 110vh;"> </div>
+      <div id="lore">
+        <p><a href="https://en.wikipedia.org/wiki/Through_the_Looking-Glass">In</a>
+        In this mirr<em>o</em>r w<em>o</em>rld, things are the same and different. There are n<em>o</em> straight, l<em>o</em>gical paths, and events happen backwards. Instead <em>o</em>f there being a cause and effect, in the l<em>o</em><em>o</em>king glass w<em>o</em>rld, the <em>o</em>utc<em>o</em>me happens first and then the cause.
+        </p>
+      </div>
+    </div>
+
+  <script type="text/javascript">
+    var i = 1;
+    var append1Function = setInterval(function(){
+      var rando = Math.floor(Math.random() * 10) + 1;
+      var pic = `<div class="patternunit" style="
+        right:${rando * 90}px;
+        top:${rando * 60}px;
+        transform: scale(2.5);
+        "><img src="../images/craigslist/ScreenShot.jpg"></div>`;
+      document.getElementById("box").insertAdjacentHTML("beforeend", pic);
+      if (i >= 1) {
+        // defining the maximum amount of cycles
+       clearInterval(append1Function);
+      }
+      i++;
+    },300); </script>
+  </body>
+</html>

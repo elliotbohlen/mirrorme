@@ -3,7 +3,7 @@
     padding:0px;
 }
 body{
-  background-color: white;
+  background-color: snow;
 }
 img{
   width:auto;
@@ -27,6 +27,7 @@ a{
   color:blue;
   display:block;
   width:100px;
+  font-size:1.2rem;
 }
 a:visited{
   color:blue;
@@ -55,9 +56,11 @@ video{
   grid-column: 2 / 9;
   grid-row: 1 / 20;
 }
+
 #box1{
   position:fixed;
   top:100px;
+  left:50%;
 }
 
 #box2{
@@ -66,30 +69,32 @@ video{
   top:200px;
 }
 #box3{
+            display:none;
   position:fixed;
   right:600px;
   top:100px;
 }
 #box4{
   position:fixed;
-  left:300px;
-  top:200px;
+  left:500px;
+  top:10px;
 }
 #box5{
+          display:none;
   position:fixed;
   left:700px;
   top:200px;
 }
 #box6{
   position:fixed;
-  right:700px;
+  right:300px;
   top:20px;
 }
 
 #box7{
   position:fixed;
   right:10px;
-  top:70px;
+  top:200px;
 }
 
 #box8{
@@ -101,7 +106,7 @@ video{
 #box9{
   position:fixed;
   right:10px;
-  top:10px;
+  top:0px;
 }
 #box10{
   position:fixed;
@@ -111,7 +116,23 @@ video{
 #box11{
   position:fixed;
   right:10px;
-  top:700px;
+  top:600px;
+}
+#box12{
+  position:fixed;
+  right:100px;
+  bottom:300px;
+}
+#box13{
+  position:fixed;
+  right:200px;
+}
+#box14{
+  position:fixed;
+  bottom:200px;
+}
+#box15{
+  position:fixed;
 }
 .patternunit{
     position:absolute;
