@@ -137,7 +137,7 @@ var append1Function = setInterval(function(){
  document.getElementById("box15").insertAdjacentHTML("beforeend", pic15);
 
 
- if (i >= 15) {
+ if (i >= 16) {
    // defining the maximum amount of cycles
   clearInterval(append1Function);
  }

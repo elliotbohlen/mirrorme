@@ -9,7 +9,7 @@
     background-color: whitesmoke;
     cursor: pointer;
   }
-  img{
+  #big{
     position:fixed;
     top:-100px;
     width:100vw;
@@ -31,10 +31,18 @@
     height:100vh;
     width:100vw;
   }
+  #box1{
+    z-index:1;
+    position:fixed;
+    top:10px;
+  }
+  img{height:50px;
+  width:auto;}
 </style>
 </head>
 <body>
-  <a href="world.html"><img src="landing3.png"></a>
+  <div id="box1"></div>
+  <a href="world.html"><img src="landing3.png" id="big"></a>
 	<video autoplay="true" class="videoElement"></video>
   <div id="block"></div>
   <script>
@@ -49,6 +57,52 @@
         console.log("Something went wrong!");
       });
   }
-</script>
+
+    var i = 1;
+    var append1Function = setInterval(function(){
+      var rando = Math.floor(Math.random() * 10) + 1;
+
+      var pic1 = `<div class="patternunit" style="
+        left:${rando*40}px;
+        top:${rando*30}px;
+        transform: scale(2.5);
+        "><img src="images/1.jpg"></div>`;
+      document.getElementById("box1").insertAdjacentHTML("beforeend", pic1);
+
+      var pic2 = `<div class="patternunit" style="
+        left:${rando*50}px;
+        top:${rando*80}px;
+        transform: scale(2.5);
+        "><img src="images/2.jpg"></div>`;
+      document.getElementById("box1").insertAdjacentHTML("beforeend", pic2);
+
+      var pic3 = `<div class="patternunit" style="
+        right:${rando*5}px;
+        top:${rando*6}px;
+        transform: scale(2.5);
+        "><img src="images/3.jpg"></div>`;
+      document.getElementById("box1").insertAdjacentHTML("beforeend", pic3);
+
+      var pic4 = `<div class="patternunit" style="
+        right:${rando*80}px;
+        top:${rando*80}px;
+        transform: scale(2.5);
+        "><img src="images/favicon.jpg"></div>`;
+      document.getElementById("box1").insertAdjacentHTML("beforeend", pic4);
+
+      var pic5 = `<div class="patternunit" style="
+        right:${rando*50}px;
+        top:${rando*100}px;
+        transform: scale(2.5);
+        "><img src="images/Infinity_Mirror_Effect.jpg"></div>`;
+      document.getElementById("box1").insertAdjacentHTML("beforeend", pic5);
+
+      if (i >= 1) {
+        // defining the maximum amount of cycles
+       clearInterval(append1Function);
+      }
+      i++;
+    },300); </script>
+
 </body>
 </html>
