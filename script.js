@@ -25,8 +25,8 @@ var append1Function = setInterval(function(){
  document.getElementById("box1").insertAdjacentHTML("beforeend", pic1);
 
  var pic2 = `<div class="patternunit" style="
-   right:${i * 40}px;
-   top:${i * 20}px;
+   right:${i * 20}px;
+   top:${i * 30}px;
    transform: scale(${(i)/10}); opacity:${n};
 
    "><img src="images/edited/vintageWalnutframed.png"></div>`;
