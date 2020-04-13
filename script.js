@@ -41,7 +41,7 @@ var append1Function = setInterval(function(){
    right:${i * 20}px;
    top:${i * 40}px;
    transform: scale(${(i+4)/10}); opacity:.${i};
-   "><img src="images/edited/ovaltop2.png"></div>`;
+   "><img src="images/edited/ovaltop.png"></div>`;
  document.getElementById("box4").insertAdjacentHTML("beforeend", pic4);
 
  var pic5 = `<div class="patternunit" style="
@@ -122,7 +122,7 @@ var append1Function = setInterval(function(){
    left:${i * 90}px;
    bottom:${i * 20}px;
    transform: scale(${(i+4)/10}); opacity:.${i};
-   "><img src="images/edited/Antique,HandCarved.png
+   "><img src="images/edited/antiquehandcarved.png
 "></div>`;
  document.getElementById("box14").insertAdjacentHTML("beforeend", pic14);
 
