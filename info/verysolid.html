@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+   <link rel="stylesheet" type="text/css" href="info.css">
+    <link rel="icon" href="../images/Infinity_Mirror_Effect.jpg" type="image/gif" sizes="16x16">
+    <title>mirrorme</title>
+  </head>
+  <body>
+    <div id="box"></div>
+
+    <div id='grid'>
+      <div id="info">
+        <p><a href="https://newyork.craigslist.org/stn/atq/d/staten-island-very-solid-antique-gold/7100376766.html">In</a>
+           an<em>o</em>ther m<em>o</em>ment Alice was thr<em>o</em>ugh the glass, and had jumped lightly d<em>o</em>wn int<em>o</em> the L<em>o</em><em>o</em>king-glass r<em>o</em><em>o</em>m. The very first thing she did was t<em>o</em> l<em>o</em><em>o</em>k whether there was a fire in the fireplace, and she was quite pleased t<em>o</em> find that there was a real <em>o</em>ne, blazing away as brightly as the <em>o</em>ne she had left behind. "S<em>o</em> I shall be as warm here as I was in the <em>o</em>ld r<em>o</em><em>o</em>m," th<em>o</em>ught Alice: "warmer, in fact, because there'll be n<em>o</em> <em>o</em>ne here t<em>o</em> sc<em>o</em>ld me away fr<em>o</em>m the fire. <em>O</em>h, what fun it'll be, when they see me thr<em>o</em>ugh the glass in here, and can't get at me!"
+        </p>
+      </div>
+      <div id="line" style="height: 140vh;"> </div>
+      <div id="lore">
+        <p><a href="https://en.wikipedia.org/wiki/Through_the_Looking-Glass">In</a>
+           an<em>o</em>ther m<em>o</em>ment Alice was thr<em>o</em>ugh the glass, and had jumped lightly d<em>o</em>wn int<em>o</em> the L<em>o</em><em>o</em>king-glass r<em>o</em><em>o</em>m. The very first thing she did was t<em>o</em> l<em>o</em><em>o</em>k whether there was a fire in the fireplace, and she was quite pleased t<em>o</em> find that there was a real <em>o</em>ne, blazing away as brightly as the <em>o</em>ne she had left behind. "S<em>o</em> I shall be as warm here as I was in the <em>o</em>ld r<em>o</em><em>o</em>m," th<em>o</em>ught Alice: "warmer, in fact, because there'll be n<em>o</em> <em>o</em>ne here t<em>o</em> sc<em>o</em>ld me away fr<em>o</em>m the fire. <em>O</em>h, what fun it'll be, when they see me thr<em>o</em>ugh the glass in here, and can't get at me!"
+
+        </p>
+      </div>
+    </div>
+
+  <script type="text/javascript">
+    var i = 1;
+    var append1Function = setInterval(function(){
+      var rando = Math.floor(Math.random() * 10) + 1;
+      var pic = `<div class="patternunit" style="
+        right:${rando * 90}px;
+        top:${rando * 60}px;
+        transform: scale(2.5);
+        "><img src="../images/craigslist/verysolid.jpg"></div>`;
+      document.getElementById("box").insertAdjacentHTML("beforeend", pic);
+      if (i >= 1) {
+        // defining the maximum amount of cycles
+       clearInterval(append1Function);
+      }
+      i++;
+    },300); </script>
+  </body>
+</html>
